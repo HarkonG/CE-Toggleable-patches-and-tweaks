@@ -1,0 +1,17 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Achievements Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/AchievementsExpanded.AchievementDef[defName="burnThemAll"]/tracker/def</xpath>
+                    <value>
+                        <def>CE_Gun_Flamethrower</def>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

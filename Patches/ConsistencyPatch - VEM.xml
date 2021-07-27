@@ -1,0 +1,17 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Mechanoids</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ItemProcessor.CombinationDef[defName="VFEM_MunitionsAndArmamentFactory_MechanizedWeaponsmith_VWE_Gun_ServiceRifle"]/result</xpath>
+                    <value>
+                        <result>CE_Gun_AKFortySeven</result>
+                    </value>
+                </li>                
+            </operations>
+        </match>
+    </Operation>
+</Patch>
