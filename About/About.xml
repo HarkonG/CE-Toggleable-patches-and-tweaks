@@ -40,5 +40,6 @@
 		<li>vanillaexpanded.achievements</li>
 		<li>VanillaExpanded.VCEFAddon</li>
 		<li>Harkon.GunNut.FNSCAR</li>
+		<li>Harkon.GunNut.CORE</li>
 	</loadAfter>
 </ModMetaData>
