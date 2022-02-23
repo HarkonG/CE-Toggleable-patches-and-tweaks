@@ -5,12 +5,16 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="CE_Gun_TacFifty" or defName="CE_Gun_crossbow"]</xpath>
+                </li>               
+
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="CE_Gun_ChargeLMG"]/label</xpath>
                     <value>
                         <label>H-20 charge HMG</label>
                     </value>
-                </li>                
+                </li>
             </operations>
         </match>
     </Operation>
