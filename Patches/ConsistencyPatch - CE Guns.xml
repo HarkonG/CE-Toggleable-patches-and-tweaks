@@ -6,7 +6,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="CE_Gun_crossbow"]</xpath>
+                    <xpath>/Defs/ThingDef[defName="CE_Gun_Crossbow"]</xpath>
                 </li>
 
                 <li Class="PatchOperationReplace">
