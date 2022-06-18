@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Storytellers Expanded - Winston Waves</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- === Charge For Everyone === -->
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/VSEWW.ModifierDef[defName=&quot;VSEWW_ChargeForEveryone&quot;]/allowedWeaponDef/li[contains(.,&quot;VWE_Gun_ChargeSMG&quot;)]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/VSEWW.ModifierDef[defName=&quot;VSEWW_ChargeForEveryone&quot;]/allowedWeaponDef/li[contains(.,&quot;VWE_Gun_ChargeSniperRifle&quot;)]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

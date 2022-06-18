@@ -14,6 +14,18 @@
                     <xpath>/Defs/ThingDef[defName="CE_Gun_FlintlockPistol"or defName="CE_Gun_FlintlockMusket"]</xpath>
                 </li>
 
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>M1 Garand, Winchester 1894 and Colt 1862</li>
+                    </mods>
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]/recipeMaker/researchPrerequisite</xpath>
+                        <value>
+                            <researchPrerequisite>VWE_Gunpowder</researchPrerequisite>
+                        </value>
+                    </match>
+                </li>
+
                 <li Class="PatchOperationRemove">
                     <xpath>/Defs/ResearchProjectDef[defName="Gunpowder"]</xpath>
                 </li>
