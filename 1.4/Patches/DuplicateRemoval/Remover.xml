@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>Crossbow</key>
+        <defaultValue>CE_Gun_Crossbow</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{Crossbow}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{Crossbow}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{Crossbow}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{Crossbow}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>FlintlockPistol</key>
+        <defaultValue>CE_Gun_FlintlockPistol</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{FlintlockPistol}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{FlintlockPistol}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{FlintlockPistol}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{FlintlockPistol}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VCEFAddon">
+                                <xpath>/Defs/VCE_Fishing.FishDef[defName="VCEF_SpecialVWE_Gun_Flintlock"]/thingDef</xpath>
+                                <value>
+                                    <thingDef>{FlintlockPistol}</thingDef>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>FlintlockMusket</key>
+        <defaultValue>CE_Gun_FlintlockMusket</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{FlintlockMusket}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{FlintlockMusket}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{FlintlockMusket}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{FlintlockMusket}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>762x39mmAK</key>
+        <defaultValue>VWE_Gun_ServiceRifle</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{762x39mmAK}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{762x39mmAK}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{762x39mmAK}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{762x39mmAK}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace" MayRequire="OskarPotocki.VFE.Mechanoid">
+                                <xpath>/Defs/ItemProcessor.CombinationDef[defName="VFEM_MunitionsAndArmamentFactory_MechanizedWeaponsmith_VWE_Gun_ServiceRifle"]/result</xpath>
+                                <value>
+                                    <result>{762x39mmAK}</result>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>762x54mmRSVD</key>
+        <defaultValue>VWE_Gun_MarksmanRifle</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{762x54mmRSVD}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{762x54mmRSVD}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{762x54mmRSVD}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{762x54mmRSVD}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>ChargePistol</key>
+        <defaultValue>VWE_Gun_ChargePistol</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{ChargePistol}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{ChargePistol}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{ChargePistol}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{ChargePistol}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VCEFAddon">
+                                <xpath>/Defs/VCE_Fishing.FishDef[defName="VCEF_SpecialVWE_Gun_ChargePistol"]/thingDef</xpath>
+                                <value>
+                                    <thingDef>{ChargePistol}</thingDef>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>ChargeShotgun</key>
+        <defaultValue>VWE_Gun_ChargeShotgun</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{ChargeShotgun}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{ChargeShotgun}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{ChargeShotgun}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{ChargeShotgun}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>ChargeSMG</key>
+        <defaultValue>VWE_Gun_ChargeSMG</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{ChargeSMG}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{ChargeSMG}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{ChargeSMG}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{ChargeSMG}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VCEFAddon">
+                                <xpath>/Defs/VCE_Fishing.FishDef[defName="VCEF_SpecialVWE_Gun_ChargeSMG"]/thingDef</xpath>
+                                <value>
+                                    <thingDef>{ChargeSMG}</thingDef>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>ChargeSniperRifle</key>
+        <defaultValue>VWE_Gun_ChargeSniperRifle</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{ChargeSniperRifle}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{ChargeSniperRifle}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{ChargeSniperRifle}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{ChargeSniperRifle}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+
+
+        </apply>
+    </Operation>
+
+
+
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>Flamethrower</key>
+        <defaultValue>VWE_Gun_Flamethrower</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Combat Extended Guns</li>
+                </mods>
+                <match Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Weapons Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{Flamethrower}"]/recipeMaker</xpath>
+                                <value>
+                                    <recipeMaker Inherit="False">
+                                    </recipeMaker>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="{Flamethrower}"]/weaponTags</xpath>
+                                <value>
+                                    <weaponTags Inherit="False">
+                                    </weaponTags>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{Flamethrower}"]</xpath>
+                                <value>
+                                    <tradeability>None</tradeability>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="{Flamethrower}"]</xpath>
+                                <value>
+                                    <generateCommonality>0</generateCommonality>
+                                </value>
+                            </li>
+
+                            <li Class="PatchOperationReplace" MayRequire="vanillaexpanded.achievements">
+                                <xpath>/Defs/AchievementsExpanded.AchievementDef[defName="burnThemAll"]/tracker/def</xpath>
+                                <value>
+                                    <def>{Flamethrower}</def>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+
+</Patch>
