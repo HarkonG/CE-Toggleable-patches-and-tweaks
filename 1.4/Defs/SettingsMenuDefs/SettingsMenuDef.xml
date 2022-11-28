@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <XmlExtensions.SettingsMenuDef>
+        <defName>HRK_settings_CEAddOnToggleablepatchesandtweaks</defName>
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <label>Combat Extended</label>
+        <settings>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Combat Extended - Toggleable patches &amp; tweaks</text>
+                <font>Medium</font>
+                <anchor>Middle</anchor>
+            </li>
+
+            <!-- ========== REALISTIC FIREARM LABELS ========== -->
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>REALISTIC NAMES</text>
+                <anchor>Middle</anchor>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Changes names of firearms in these mods to the real counterpart (Assault Rifle -> M16A3).</text>
+                <font>Tiny</font>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>toggleCORENames</key>
+                <label>Vanilla</label>
+                <defaultValue>true</defaultValue>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>toggleCENames</key>
+                <label>Combat Extended</label>
+                <defaultValue>true</defaultValue>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>toggleVWENames</key>
+                <label>Vanilla Weapons Expanded</label>
+                <defaultValue>true</defaultValue>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>toggleVWEFNames</key>
+                <label>Vanilla Weapons Expanded - Frontier</label>
+                <defaultValue>true</defaultValue>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>toggleVWEQNames</key>
+                <label>Vanilla Weapons Expanded - Quickdraw</label>
+                <defaultValue>true</defaultValue>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>toggleVFESNames</key>
+                <label>Vanilla Factions Expanded - Settlers</label>
+                <defaultValue>true</defaultValue>
+            </li>
+
+            <!-- ========== GUN DUPLICATES ========== -->
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>GUN DUPLICATES</text>
+                <anchor>Middle</anchor>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Choose one option for each weapon, the weapon you choose will be disabled.</text>
+                <font>Tiny</font>
+            </li>
+
+            <li Class="XmlExtensions.Setting.SplitColumn">
+                <gapSize>70</gapSize>
+                <leftCol>
+
+                    <!-- === Crossbow === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Crossbow</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>Crossbow</key>
+                        <defaultValue>CE_Gun_Crossbow</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_Crossbow</value>
+                                <label>Crossbow (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Bow_Crossbow</value>
+                                <label>Crossbow (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <!-- === Flintlock Pistol === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Flintlock Pistol</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>FlintlockPistol</key>
+                        <defaultValue>CE_Gun_FlintlockPistol</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_FlintlockPistol</value>
+                                <label>Flintlock Pistol (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Gun_Flintlock</value>
+                                <label>Flintlock (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <!-- === Flintlock Musket === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Flintlock Musket</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>FlintlockMusket</key>
+                        <defaultValue>CE_Gun_FlintlockMusket</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_FlintlockMusket</value>
+                                <label>Flintlock Musket (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Gun_Musket</value>
+                                <label>Musket (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <!-- === 7.62x39mm AK === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>7.62x39mm AK</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>762x39mmAK</key>
+                        <defaultValue>VWE_Gun_ServiceRifle</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_AKM</value>
+                                <label>AKM (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Gun_ServiceRifle</value>
+                                <label>Service Rifle (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <!-- === 7.62x54mmR SVD === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>7.62x54mmR SVD</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>762x54mmRSVD</key>
+                        <defaultValue>VWE_Gun_MarksmanRifle</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_SVD</value>
+                                <label>SVD (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Gun_MarksmanRifle</value>
+                                <label>Marksman Rifle (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                </leftCol>
+
+                <rightCol>
+
+                    <!-- === Charge pistol === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Charge pistol</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>ChargePistol</key>
+                        <defaultValue>VWE_Gun_ChargePistol</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_ChargePistol</value>
+                                <label>P-3 charge pistol (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Gun_ChargePistol</value>
+                                <label>Charge pistol (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <!-- === Charge shotgun === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Charge shotgun</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>ChargeShotgun</key>
+                        <defaultValue>VWE_Gun_ChargeShotgun</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_ChargeShotgun</value>
+                                <label>S-9 charge shotgun (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Gun_ChargeShotgun</value>
+                                <label>Charge shotgun (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <!-- === Charge SMG === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Charge SMG</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>ChargeSMG</key>
+                        <defaultValue>VWE_Gun_ChargeSMG</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_ChargeSMG</value>
+                                <label>S-14 charge SMG (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Gun_ChargeSMG</value>
+                                <label>Charge SMG (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <!-- === Charge Sniper Rifle === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Charge Sniper Rifle</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>ChargeSniperRifle</key>
+                        <defaultValue>VWE_Gun_ChargeSniperRifle</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_ChargeSniperRifle</value>
+                                <label>R-11 charge sniper rifle (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Gun_ChargeSniperRifle</value>
+                                <label>Charge Sniper Rifle (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                    <!-- === Flamethrower (Chemfuel/Prometheum Fuel) === -->
+                    <li Class="XmlExtensions.Setting.Gap"/>
+
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Flamethrower</text>
+                        <font>Small</font>
+                        <anchor>Middle</anchor>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Gap">
+                        <spacing>2</spacing>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>Flamethrower</key>
+                        <defaultValue>VWE_Gun_Flamethrower</defaultValue>
+                        <buttons>
+                            <li>
+                                <value>CE_Gun_Flamethrower</value>
+                                <label>RM2 Flamethrower (CE)</label>
+                            </li>
+                            <li>
+                                <value>VWE_Gun_Flamethrower</value>
+                                <label>Flamethrower (VWE)</label>
+                            </li>
+                        </buttons>
+                    </li>
+
+                </rightCol>
+            </li>
+
+            <!-- ========== STACK REDUCER ========== -->
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>STACK REDUCER by Trik</text>
+                <anchor>Middle</anchor>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Cuts ammo stack sizes to the given value to play better with reloading emplacements. This works really well if you are using storage mods and helps with the new RW 1.4 shelves. Original patch operations made by Trik.</text>
+                <font>Tiny</font>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Textbox">
+                <key>SmallAmmoStackSize</key>
+                <label>Small calibers ammo stack size</label>
+                <defaultValue>1000</defaultValue>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Textbox">
+                <key>LargeAmmoStackSize</key>
+                <label>Large calibers ammo stack size</label>
+                <defaultValue>500</defaultValue>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Textbox">
+                <key>GrenadeAmmoStackSize</key>
+                <label>Grenade ammo stack size</label>
+                <defaultValue>200</defaultValue>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Textbox">
+                <key>ShellAmmoStackSize</key>
+                <label>Shell/Rocket ammo stack size</label>
+                <defaultValue>5</defaultValue>
+            </li>
+
+            <!-- ========== MISC TWEAKS ========== -->
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>MISC TWEAKS</text>
+                <anchor>Middle</anchor>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>A collection of misc tweaks and fixes. Hover over each setting to see what it does.</text>
+                <font>Tiny</font>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>GunpowderResearchFix</key>
+                <label>Gunpowder research fix</label>
+                <defaultValue>true</defaultValue>
+                <tooltip>VWE and CE Guns both add their own Gunpowder research, since removing one or the other could cause issues this tweak splits the cost between the two and puts them both in the middle of the smithing-gunsmithing research chain.</tooltip>
+            </li>
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Remember any change of the settings needs a restart to take effect.</text>
+                <font>Tiny</font>
+            </li>
+            <li Class="XmlExtensions.Setting.Gap"/>
+            <li Class="XmlExtensions.Setting.ResetSettings"/>
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+
+</Defs>
