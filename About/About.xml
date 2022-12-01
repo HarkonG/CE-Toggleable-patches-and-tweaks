@@ -54,6 +54,7 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>imranfish.xmlextensions</li>
 		<li>CETeam.CombatExtendedArmory</li>
+		<li>VanillaExpanded.VMemesE</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>trikanyo.CEAmmoStackReducer</li>

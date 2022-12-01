@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>VEMSRangedStyleRemover</key>        
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Ideology Expanded - Memes and Structures</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Authoritarian"]/thingDefStyles/li/thingDef[
+                            text()="Gun_AssaultRifle" or
+                            text()="Gun_ChainShotgun" or                           
+                            text()="Gun_ChargeRifle" or
+                            text()="Gun_HeavySMG" or
+                            text()="Gun_SniperRifle" or
+                            text()="Gun_MachinePistol" or
+                            text()="Gun_Autopistol" or
+                            text()="Gun_Revolver" or
+                            text()="Gun_LMG" or
+                            text()="Gun_PumpShotgun" or
+                            text()="Gun_BoltActionRifle" or
+                            text()="Gun_ChargeLance" or
+                            text()="Gun_Minigun" 
+                            ]/..</xpath>                           
+                        </li>    
+
+                        <li Class="PatchOperationRemove" MayRequire="VanillaExpanded.VWE">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Authoritarian"]/thingDefStyles/li/thingDef[
+                            text()="VWE_Gun_ChargePistol" or
+                            text()="VWE_Gun_ChargeShotgun" or                           
+                            text()="VWE_Gun_ChargeSMG" or
+                            text()="VWE_Gun_ChargeLMG" or
+                            text()="VWE_Gun_ChargeSniperRifle" or
+                            text()="VWE_Gun_ChargeMinigun" or
+                            text()="VWE_Gun_AntiMaterialRifle" or
+                            text()="VWE_Gun_HandCannon" or
+                            text()="VWE_CombatHandgun" or
+                            text()="VWE_Gun_Flamethrower" or
+                            text()="VWE_Gun_BattleRifle" or
+                            text()="VWE_Gun_Carbine" or
+                            text()="VWE_Gun_Flintlock" or
+                            text()="VWE_Gun_HMG" or
+                            text()="VWE_SawedOffShotgun" or
+                            text()="VWE_Gun_SemiAutomaticRifle" or
+                            text()="VWE_Gun_LeverActionRifle" or
+                            text()="VWE_Gun_LightSMG" or
+                            text()="VWE_Gun_SMG" or
+                            text()="VWE_Gun_ServiceRifle" or
+                            text()="VWE_Gun_MarksmanRifle" 
+                            ]/..</xpath>                           
+                        </li>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Corporate"]/thingDefStyles/li/thingDef[
+                            text()="Gun_AssaultRifle" or
+                            text()="Gun_ChainShotgun" or                           
+                            text()="Gun_ChargeRifle" or
+                            text()="Gun_HeavySMG" or
+                            text()="Gun_SniperRifle" or
+                            text()="Gun_MachinePistol" or
+                            text()="Gun_Autopistol" or
+                            text()="Gun_Revolver" or
+                            text()="Gun_LMG" or
+                            text()="Gun_PumpShotgun" or
+                            text()="Gun_BoltActionRifle" or
+                            text()="Gun_ChargeLance" or
+                            text()="Gun_Minigun" or
+                            text()="Bow_Recurve" or
+                            text()="Bow_Short" or
+                            text()="Bow_Great" or
+                            text()="Pila"
+                            ]/..</xpath>                           
+                        </li>   
+
+                        <li Class="PatchOperationRemove" MayRequire="VanillaExpanded.VWE">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Corporate"]/thingDefStyles/li/thingDef[
+                            text()="VWE_Gun_ChargePistol" or
+                            text()="VWE_Gun_ChargeShotgun" or                           
+                            text()="VWE_Gun_ChargeSMG" or
+                            text()="VWE_Gun_ChargeLMG" or
+                            text()="VWE_Gun_ChargeSniperRifle" or
+                            text()="VWE_Gun_ChargeMinigun" or
+                            text()="VWE_Gun_AntiMaterialRifle" or
+                            text()="VWE_Bow_Compound" or
+                            text()="VWE_Bow_Long" or
+                            text()="VWE_Gun_HandCannon" or
+                            text()="VWE_CombatHandgun" or
+                            text()="VWE_Gun_Flamethrower" or
+                            text()="VWE_Gun_BattleRifle" or
+                            text()="VWE_Gun_Carbine" or
+                            text()="VWE_Bow_Crossbow" or
+                            text()="VWE_Gun_Flintlock" or
+                            text()="VWE_Gun_HMG" or
+                            text()="VWE_SawedOffShotgun" or
+                            text()="VWE_Gun_SemiAutomaticRifle" or
+                            text()="VWE_Gun_LeverActionRifle" or
+                            text()="VWE_Gun_LightSMG" or
+                            text()="VWE_Gun_SMG" or
+                            text()="VWE_Gun_ServiceRifle" or
+                            text()="VWE_Gun_MarksmanRifle" or
+                            text()="VWE_Gun_Musket"
+                            ]/..</xpath>                           
+                        </li>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Eldritch"]/thingDefStyles/li/thingDef[                          
+                            text()="Gun_HeavySMG" or                            
+                            text()="Gun_Autopistol" or
+                            text()="Gun_Revolver"                            
+                            ]/..</xpath>                           
+                        </li>            
+
+                    </operations>
+                </match>
+            </Operation>
+        </caseTrue>
+    </Operation>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>Harkon.CEAddOn.Toggleablepatchesandtweaks</modId>
+        <key>VEMSMeleeStyleRemover</key>        
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Ideology Expanded - Memes and Structures</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>                       
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Corporate"]/thingDefStyles/li/thingDef[
+                            text()="MeleeWeapon_Club" or
+                            text()="MeleeWeapon_Gladius" or                           
+                            text()="MeleeWeapon_Ikwa" or
+                            text()="MeleeWeapon_Spear" or                            
+                            text()="MeleeWeapon_BreachAxe" or
+                            text()="MeleeWeapon_Knife" or
+                            text()="MeleeWeapon_LongSword" or
+                            text()="MeleeWeapon_Mace"                         
+                            ]/..</xpath>                           
+                        </li>
+
+                        <li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Royalty">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Corporate"]/thingDefStyles/li/thingDef[
+                            text()="MeleeWeapon_Axe" or
+                            text()="MeleeWeapon_Warhammer"                            
+                            ]/..</xpath>                           
+                        </li>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Eldritch"]/thingDefStyles/li/thingDef[text()="MeleeWeapon_Knife"]/..</xpath>                           
+                        </li>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Esotericism"]/thingDefStyles/li/thingDef[text()="MeleeWeapon_Gladius"]/..</xpath>                           
+                        </li> 
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/StyleCategoryDef[defName = "VME_Shintaoism"]/thingDefStyles/li/thingDef[text()="MeleeWeapon_LongSword"]/..</xpath>                           
+                        </li>           
+
+                    </operations>
+                </match>
+            </Operation>
+        </caseTrue>
+    </Operation>
+
+</Patch>

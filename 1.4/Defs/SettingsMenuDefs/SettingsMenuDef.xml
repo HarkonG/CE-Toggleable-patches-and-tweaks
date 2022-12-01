@@ -443,6 +443,28 @@
                 <tooltip>VWE and CE Guns both add their own Gunpowder research, since removing one or the other could cause issues this tweak splits the cost between the two and puts them both in the middle of the smithing-gunsmithing research chain.</tooltip>
             </li>
 
+            <li Class="XmlExtensions.Setting.Gap">
+                <spacing>2</spacing>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>VEMSRangedStyleRemover</key>
+                <label>Remove ranged weapon styles (VE-Memes and Structures). </label>
+                <defaultValue>true</defaultValue>
+                <tooltip>Removes styles added by VE Memes and Structures, only affects ranged weapons. This is so you dont have an UMP .45 that looks like an Thompson. Be careful toggling this setting mid-save (you may have to remove styled weapons to prevent errors).</tooltip>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap">
+                <spacing>2</spacing>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>VEMSMemesMeleeStyleRemover</key>
+                <label>Remove melee weapon styles (VE-Memes and Structures).</label>
+                <defaultValue>true</defaultValue>
+                <tooltip>Removes styles added by VE Memes and Structures, only affects melee weapons. This is so you dont have an UMP .45 that looks like an Thompson. Be careful toggling this setting mid-save (you may have to remove styled weapons to prevent errors).</tooltip>
+            </li>           
+
             <li Class="XmlExtensions.Setting.GapLine"/>
             <li Class="XmlExtensions.Setting.Text">
                 <text>Remember any change of the settings needs a restart to take effect.</text>
