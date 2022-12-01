@@ -20,21 +20,21 @@
                             </value>
                         </li>
 
-                        <li Class="PatchOperationReplace">
+                        <li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VWE">
                             <xpath>/Defs/ResearchProjectDef[defName="VWE_Gunpowder"]/label</xpath>
                             <value>
                                 <label>gunpowder (VWE)</label>
                             </value>
                         </li>
 
-                        <li Class="PatchOperationReplace">
+                        <li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VWE">
                             <xpath>/Defs/ResearchProjectDef[defName="VWE_Gunpowder" or defName="Gunpowder"]/baseCost</xpath>
                             <value>
                                 <baseCost>250</baseCost>
                             </value>
                         </li>
 
-                        <li Class="PatchOperationAdd">
+                        <li Class="PatchOperationAdd" MayRequire="VanillaExpanded.VWE">
                             <xpath>/Defs/ResearchProjectDef[defName="VWE_Gunpowder"]</xpath>
                             <value>
                                 <prerequisites>
@@ -43,7 +43,7 @@
                             </value>
                         </li>
 
-                        <li Class="PatchOperationAdd">
+                        <li Class="PatchOperationAdd" MayRequire="VanillaExpanded.VWE">
                             <xpath>/Defs/ResearchProjectDef[defName="Gunsmithing"]/hiddenPrerequisites</xpath>
                             <value>
                                 <li>VWE_Gunpowder</li>
