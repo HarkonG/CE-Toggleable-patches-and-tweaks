@@ -27,11 +27,6 @@
 	</modDependencies>
 	<loadAfter>
 		<li>Harkon.Other.GarandWinchesterColt</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.SettlersModule</li>
-		<li>OskarPotocki.VFE.Mechanoid</li>
-		<li>vanillaexpanded.achievements</li>
-		<li>VanillaExpanded.VCEFAddon</li>
-		<li>Harkon.GunNut.FNSCAR</li>
 		<li>Harkon.GunNut.CORE</li>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
@@ -43,18 +38,25 @@
 		<li>VanillaExpanded.VWEHW</li>
 		<li>VanillaExpanded.VWEC</li>
 		<li>VanillaExpanded.VWEFT</li>
+		<li>VanillaExpanded.VWENL</li>
+		<li>VanillaExpanded.VWEMS</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.SettlersModule</li>
 		<li>VanillaExpanded.VWE</li>
 		<li>Samael.PCA</li>
 		<li>al9000.ceadvancedindustrial</li>
 		<li>Kriptoner.EX1</li>
 		<li>CE.Kirp.RUGuns</li>
+		<li>CE_2Bore</li>
+		<li>CE.BlackPowderRifle</li>
+		<li>CE_BlackPowderGuns_copy</li>
+		<li>CE_BlackPowderGuns</li>
 		<li>CETeam.CombatExtendedGuns</li>
 		<li>al9000.CEGunsButAK</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>imranfish.xmlextensions</li>
 		<li>CETeam.CombatExtendedArmory</li>
-		<li>VanillaExpanded.VMemesE</li>
+		<li>PeteTimesSix.ResearchReinvented</li>
+		<li>PeteTimesSix.ResearchReinvented.SteppingStones</li>
 	</loadAfter>
 	<incompatibleWith>
 		<li>trikanyo.CEAmmoStackReducer</li>

@@ -448,6 +448,17 @@
             </li>
 
             <li Class="XmlExtensions.Setting.Checkbox">
+                <key>LoadingBenchMachining</key>
+                <label>Loading Bench back to machining (CE)</label>
+                <defaultValue>true</defaultValue>
+                <tooltip>Moves the loading bench back to machining from gunsmithing since reloading ammo is not the same as crafting weapons.</tooltip>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap">
+                <spacing>2</spacing>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
                 <key>VEMSRangedStyleRemover</key>
                 <label>Remove ranged weapon styles (VE-Memes and Structures). </label>
                 <defaultValue>true</defaultValue>
@@ -463,7 +474,7 @@
                 <label>Remove melee weapon styles (VE-Memes and Structures).</label>
                 <defaultValue>true</defaultValue>
                 <tooltip>Removes styles added by VE Memes and Structures, only affects melee weapons. This is so you dont have an UMP .45 that looks like an Thompson. Be careful toggling this setting mid-save (you may have to remove styled weapons to prevent errors).</tooltip>
-            </li>           
+            </li>
 
             <li Class="XmlExtensions.Setting.GapLine"/>
             <li Class="XmlExtensions.Setting.Text">
