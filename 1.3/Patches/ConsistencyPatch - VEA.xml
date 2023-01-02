@@ -1,8 +1,0 @@
-<Patch>
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/AchievementsExpanded.AchievementDef[defName="burnThemAll"]/tracker/def</xpath>
-        <value>
-            <def>CE_Gun_Flamethrower</def>
-        </value>
-    </Operation>
-</Patch>
